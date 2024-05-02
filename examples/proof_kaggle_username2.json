@@ -1,0 +1,34 @@
+{
+  "provider": "http",
+  "parameters": {
+    "body": {
+      "includeGroups": false,
+      "includeLogins": false,
+      "includeVerificationStatus": false
+    },
+    "geoLocation": "",
+    "method": "POST",
+    "paramValues": { "username": "tsarprince" },
+    "responseMatches": [
+      { "type": "regex", "value": "\"userName\":\"(?<username>.*)\"" }
+    ],
+    "responseRedactions": [
+      {
+        "jsonPath": "$.userName",
+        "regex": "\"userName\":\"(?<username>.*)\"",
+        "xPath": ""
+      }
+    ],
+    "url": "https://www.kaggle.com/api/i/users.UsersService/GetCurrentUser"
+  },
+  "owner": "0x9228b9b9476e11ec862eebf8b92ecd5e7d2471b0",
+  "timestampS": 1714497096,
+  "context": {
+    "contextAddress": "0x0",
+    "contextMessage": "",
+    "extractedParameters": { "username": "tsarprince" },
+    "providerHash": "0x3cedadb552420a5d654990596c65a156bbeca9cfee8fddb74b2a161f2ee347a5"
+  },
+  "identifier": "0xb4ce39ec9ad33c15f128826964352342a11c746f970192e88bb39eecf0e6da65",
+  "epoch": 1
+}
